@@ -91,12 +91,20 @@
                 background-color: transparent;
                 padding: 5px;
             }
+            ol.a {
+                list-style-type: upper-roman;
+            }
             .img {
                 display: block;
                 position: relative;
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 50%;
+            }
+            #rcorners1 {
+                border-radius: 20px;
+                background:rgb(61, 61, 61);
+                padding: 8px;
             }
             html {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -145,13 +153,18 @@
                     </li>
                 
                 <li><a href="reference.html" style="padding: 20px;">Is that a jojo reference?!</a></li>
-                <li style="float:right"><a href="#about" class="active" style="padding: 20px">About</a></li>
+                <li style="float:right"><a href="about.html" class="active" style="padding: 20px">About</a></li>
                 </nav>
             </ul><br>
         </header><br>
-        <main>
+        <main style="padding: 15px;">
             <div class="row">
                 <div class="column middle">
+                    <h2>Contents</h2>
+                    <ol id="rcorners1" class="a" style="padding: 20px; font-size: 105%;">
+                        <li href="#summary2">Summary</li><br>
+                        <li href="#mBattles2">Major Battles</li><br>
+                    </ol>
                     <h1 style="color:white">JoJo's Bizarre Adventure: Battle Tendency</h1>
                     <p style="word-spacing: 5px">Set in North America and Europe in 1938–39 around 50 years after Phantom Blood,
                          the story follows Joseph Joestar and Caesar Anthonio Zeppeli, descendants of Jonathan Joestar
@@ -162,14 +175,14 @@
                               to sunlight.
                     </p>
                 </div>
-                 <div class="column side">
+                 <div class="column side" id="rcorners1">
                     <h1 style="color:white; text-align: center;">Battle Tendency Manga Cover</h1>
                     <div class="img">
                         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Jojo8.jpg/220px-Jojo8.jpg"
                             alt="Battle Tendency Japanese Manga Cover" style="max-width: 100%;">
                     </div>
                     <p style="text-align: center">Cover of JoJo's Bizarre Adventure volume 8, featuring the Pillar Men
-                         (left to right: Wamuu, Esidisi, and Kars) and Joseph Joestar (foreground)</p>
+                         (Wamuu- Wham!, Esidisi- ACDC, and Kars) and Joseph Joestar.</p>
             </div>    
         </main>
     </body>
