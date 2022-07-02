@@ -3,6 +3,7 @@
     <head>
         <title>JoJo's Bizarre Archive</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="dropdownsheet" type="text/css" href="inception.css">
         <link rel="icon" type="imgae/x-icon" 
         href="https://upload.wikimedia.org/wikipedia/commons/6/6e/JoJo%27s_Bizarre_Adventure_logo.png?20141130224707">
         <meta charset="UTF-8">
@@ -17,7 +18,8 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: rgba(174, 0, 104, 1);  
+                background-color: rgba(174, 0, 104, 1);
+                
             }
             li{
                 float: left;
@@ -64,16 +66,21 @@
             * {
                 box-sizing: border-box;
             }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
             .column {
                 float: left;
-                padding: 0px 50px;
+                padding: 0px 70px;
             }
             .column.side {
-                width: 31%;
+                width: 33.33%;
                 color: white;
             }
             .column.middle {
-                width: 69%;
+                width: 64.66%;
                 color: white;
             }
             .row:after {
@@ -81,15 +88,10 @@
                 display: table;
                 clear: both;
             }
-            @media screen and (max-with: 600px) {
+            @media screen and (max-with: 800px) {
                 .column.side, .column.middle {
                     width: 100%;
                 }
-            }
-            ul.list {
-                list-style-type: circle;
-                background-color: transparent;
-                padding: 5px;
             }
             .img {
                 display: block;
@@ -97,11 +99,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 50%;
-            }
-            #rcorners1 {
-                border-radius: 20px;
-                background:rgb(61, 61, 61);
-                padding: 8px;
             }
             html {
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -150,14 +147,9 @@
                     </li>
                 
                 <li><a href="reference.html" style="padding: 20px;">Is that a jojo reference?!</a></li>
-                <li style="float:right"><a href="#about" class="active" style="padding: 20px">About</a></li>
+                <li style="float:right"><a href="about.html" class="active" style="padding: 20px">About</a></li>
                 </nav>
             </ul><br>
         </header><br>
-        <main style="padding: 20px;">
-            <h1 style="color:white;">About</h1>
-            <p>You're actually reading this?! lol</p>
-            <p>Theres nothing here nerd, go awe.</p>
-            <p>twitter.com/imBobith ;)</p>
-        </main>
+
     </body>
