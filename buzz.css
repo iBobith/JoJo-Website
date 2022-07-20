@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    color: white;
+}
+body{
+    background-color: rgba(54, 54, 54);
+    background-position: center center;
+    background-size: cover;
+}
+.wrapper{
+    width: auto;
+    margin: 0 auto;
+}
+.wrapper ul{
+    margin-top: 0;
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.wrapper ul li{
+    width: 16.6666666%;
+    background-color: rgba(174, 0, 104, 1);
+    border: 0px solid transparent;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: black;
+    position: relative;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 4000;
+}
+.wrapper ul li:hover{
+    background-color: rgba(150, 0, 90, 1);
+}
+.wrapper ul ul{
+    width: 100%;
+    display: none;
+}
+.wrapper ul ul li{
+    width: 100%;
+}
+.wrapper ul li:hover > ul{
+    display: block;
+}
+.wrapper ul ul ul{
+    margin-left: 100%;
+    top: 0;
+    position: absolute;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.column{
+    float: left;
+    padding: 0 70px;
+}
+.column.side{
+    width: 33.33%;
+    color: white;
+}
+.column.middle{
+    width: 64.66%;
+    color: white;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-with: 800px){
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+.imgw{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 300px;
+}
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-banner{
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    position: relative;
+}
+.main-banner .imgban{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+}
+.main-banner #imgban3{
+    background-image: url(img/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban2{
+    background-image: url(img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-banner #imgban1{
+    background-image: url(img/banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbanbtn{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 2px;
+    position: absolute;
+    top: 90px;
+    z-index: 2000;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.imgbanbtn:hover{
+    opacity: 0.9;
+}
+.imgbanbtn-prev{
+    left: 5px;
+    background-image: url(img/arrowleft.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgbanbtn-next{
+    right: 5px;
+    background-image: url(img/arrowright.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
